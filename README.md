@@ -1,2 +1,3 @@
-# schedario
-React, Typescript Tab component
+# Schedario
+
+A simple Tabs component in ReactJS and Typescript.
