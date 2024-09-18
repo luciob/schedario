@@ -1,0 +1,26 @@
+.badge {
+  border-radius: var(--spacing-m);
+  color: var(--color-dark);
+  display: inline-block;
+  font-weight: bold;
+  padding: var(--spacing-3xs) var(--spacing-2xs);
+}
+
+.badge.neutral {
+  background-color: var(--color-neutral);
+}
+
+.badge.positive {
+  background-color: var(--color-positive);
+}
+
+.badge.negative {
+  background-color: var(--color-negative);
+}
+
+@media screen and (max-width: 768px) {
+  .badge {
+    border-radius: var(--spacing-2xs);
+    padding: var(--spacing-4xs) var(--spacing-3xs);
+  }
+}

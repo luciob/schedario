@@ -1,0 +1,11 @@
+.text {
+  line-height: 1.5;
+}
+
+.text.s {
+  font-size: 12px;
+}
+
+.text.m {
+  font-size: 14px;
+}
