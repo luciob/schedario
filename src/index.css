@@ -1,14 +1,61 @@
 :root {
-  color-scheme: light dark;
-  --c-light: #eee;
-  --c-dark: #111;
+  /* Color vars */
+  --color-light: #fff;
+  --color-dark: #111;
+  --color-neutral: #f1f1f7;
+  --color-positive: #b1ffc7;
+  --color-negative: #ffbfb1;
+  --color-primary: #1b2134;
+  --color-border: #d3d3dc;
+  --color-active: #f1f1f7;
+  --color-active-selected: #585d71;
+  --color-hover: #f6f6fa;
+  --color-hover-selected: #343a4e;
+  /* Font vars */
+  --font-m: 14px;
+  --font-s: 12px;
+  /* Spacing vars */
+  --spacing-0: 0;
+  --spacing-4xs: 2px;
+  --spacing-3xs: 4px;
+  --spacing-2xs: 8px;
+  --spacing-xs: 12px;
+  --spacing-s: 16px;
+  --spacing-m: 20px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
 }
 
 body {
-  background-color: light-dark(var(--c-light), var(--c-dark));
-  display: grid;
-  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-light);
+  font-size: var(--font-m);
   margin: 0;
   min-height: 100vh;
-  place-content: center;
+}
+
+#root main {
+  padding: var(--spacing-xl);
+}
+
+div.tab-content {
+  display: grid;
+  padding: var(--spacing-s) 0;
+}
+
+div.tab-content.files {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div.tab-content > article {
+  background-color: var(--color-border);
+  border-radius: var(--spacing-s);
+  height: 48px;
+  margin: var(--spacing-2xs);
+}
+
+div.tab-content.files > article,
+div.tab-content.dashboard > article {
+  height: 120px;
 }
