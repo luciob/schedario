@@ -1,0 +1,29 @@
+.tabList {
+  display: flex;
+  overflow-x: scroll;
+  padding: var(--spacing-3xs) var(--spacing-0) var(--spacing-s) var(--spacing-3xs);
+  width: 100%;
+}
+
+.tabList:focus,
+.tabList:focus-visible {
+  outline: none;
+}
+
+.tabList.pill > :not(:last-child) {
+  margin-right: var(--spacing-xs);
+}
+
+.tabList.underline > :not(:last-child) {
+  margin-right: var(--spacing-xl);
+}
+
+@media screen and (max-width: 768px) {
+  .tabList.pill > :not(:last-child) {
+    margin-right: var(--spacing-2xs);
+  }
+
+  .tabList.underline > :not(:last-child) {
+    margin-right: var(--spacing-l);
+  }
+}
